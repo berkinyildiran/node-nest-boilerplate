@@ -1,0 +1,20 @@
+{
+  "name": "node-nest-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "nest build",
+    "rebuild": "rm -rf dist && npm run build",
+    "start": "nest start",
+    "start:dev": "npm run start -- --watch",
+    "start:prod": "node dist/main"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.0.8",
+    "@nestjs/core": "^11.0.8",
+    "@nestjs/platform-express": "^11.0.8"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.2",
+    "prettier": "^3.5.0"
+  }
+}
