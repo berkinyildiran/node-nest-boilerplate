@@ -1,11 +1,11 @@
 import { NestFactory } from '@nestjs/core'
 
-import { CustomLogger } from './logger'
+import { LoggerService } from './logger/logger.service'
 
 import { AppModule } from './app.module'
 
 async function bootstrap() {
-  const logger = new CustomLogger()
+  const logger = new LoggerService()
 
   const app = await NestFactory.create(AppModule, {
     logger,
